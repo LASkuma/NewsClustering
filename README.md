@@ -9,5 +9,21 @@ This is a repo for CS473 Final Project. It's aimed to cluster news threads from 
 
 You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.html) from gensim website .
 
+#Data#
+The file "2012data.txt" in Data directory is used as the input for this project. It has the following structure
+
+__url__\n
+
+__\<Content>__\n
+
+__title__\n
+
+__content__\n
+
+__\<\Content>__\n
+
+\n
+
+
 #Resources#
 [Python Official Tutorial](http://docs.python.org/2/tutorial/index.html)
