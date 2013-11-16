@@ -13,29 +13,36 @@ def main():
     stopFile.close()
 
     # Parse in and remove punctuation
-    doc = []                    # List to store the content of a single document
-    url = dataFile.readline()   # Read the first line as url
-    dataFile.readline()         # Skip the <Content> tag
+    docs = []                       # List to store the contents of all the documents
     while True:
-        line = dataFile.readline().strip()
-        if line.startswith("</Content>"): break
-        s = " ".join(re.split('\W+', line.lower()))
-        doc.append(s)
+        strContent = ""             # String to store content of a single document
+        url = dataFile.readline()   # Read the first line as url
+        dataFile.readline()         # Skip the <Content> tag
+        while True:
+            line = dataFile.readline().strip()
+            if line.startswith("</Content>"): break
+            s = " ".join(re.split('\W+', line.lower()))
+            strContent += ' ' + s
+
+        docs.append(strContent)
+        if not dataFile.readline(): break
+
+    dataFile.close
        
     # Remove stop words
     texts = [[word for word in document.lower().split() if word not in stopList]
-             for document in doc]
-
-    # Remove words that only appear once
-    # all_tokens = sum(texts, [])
-    # tokens_once = set(word for word in set(all_tokens) if all_tokens.count(word) == 1)
-    # texts = [[word for word in text if word not in tokens_once]
-    #          for text in texts]
+             for document in docs]
 
     # Stemming
-    result = [" ".join([stem(word) for word in line]) for line in texts]
+    result = [[stem(word) for word in line] for line in texts]
 
-    print result
+    # Remove words that only appear once
+    all_tokens = sum(result, [])
+    tokens_once = set(word for word in set(all_tokens) if all_tokens.count(word) == 1)
+    texts = [[word for word in text if word not in tokens_once]
+            for text in result]
+
+    print texts
 
 if __name__ == "__main__":
     main()
