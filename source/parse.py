@@ -27,7 +27,7 @@ def main():
         docs.append(strContent)
         if not dataFile.readline(): break
 
-    dataFile.close
+    dataFile.close()
        
     # Remove stop words
     texts = [[word for word in document.lower().split() if word not in stopList]
