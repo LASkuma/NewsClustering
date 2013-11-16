@@ -9,11 +9,11 @@ def main():
     doc = []
     table = string.maketrans("","")
     while True:
-        line = f.readline().strip().lower()
+        line = f.readline().strip()
         s = line.translate(table, string.punctuation)
         s = " ".join([stem(word) for word in s.split(" ")])
         if line.startswith("</Content>"): break
-        doc.append(s)
+        doc.append(s.lower())
 
     print doc
 
