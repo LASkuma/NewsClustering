@@ -7,15 +7,13 @@ def main():
     url = f.readline()
     f.readline()
     doc = []
+    table = string.maketrans("","")
     while True:
-        line = f.readline().strip()
-        #line = line.translate(string.maketrans("",""), string.punctuation)
+        line = f.readline().strip().lower()
+        s = line.translate(table, string.punctuation)
+        s = " ".join([stem(word) for word in s.split(" ")])
         if line.startswith("</Content>"): break
-        doc.append(line)
-
-    doc = [[stem(word) for word in sentence.split(" ")] for sentence in doc]
-
-    doc = [" ".join(sentence) for sentence in doc]
+        doc.append(s)
 
     print doc
 
