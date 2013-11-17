@@ -5,8 +5,8 @@ import re
 
 def main():
     # Open utility and data files
-    dataFile = open('../data/2012data.txt', 'r')
-    stopFile = open('../data/english.stop.txt', 'r')
+    dataFile = open('../Data/2012data.txt', 'r')
+    stopFile = open('../Data/english.stop.txt', 'r')
 
     # Read in stop list
     stopList = [line.strip() for line in stopFile]
