@@ -11,11 +11,13 @@ This is a repo for CS473 Final Project. It's aimed to cluster news threads from 
 You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.html) from gensim website .
 
 #To-do#
-1. Save document urls
+1. ~~Save document urls~~
 2. ~~Transform to sparse~~
-3. LDA step
-4. Inverse hash stemmed word to original word
-5. Do TF-IDF tranform to corpus
+3. ~~LDA step~~
+4. ~~Inverse hash stemmed word to original word~~
+5. ~~Do TF-IDF tranform to corpus~~
+6. Similarity queries for all the documents (Clustering)
+7. Summarize topics
 
 #Data#
 The file "2012data.txt" in Data directory is used as the input for this project. It has the following structure
