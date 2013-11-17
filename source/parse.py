@@ -3,6 +3,7 @@ from stemming.porter2 import stem
 import string
 import re
 import logging
+import pickle
 
 def main():
     # Open utility and data files
@@ -30,14 +31,17 @@ def main():
         if not dataFile.readline(): break
 
     dataFile.close()
-       
     # Remove stop words
     texts = [[word for word in document.lower().split() if word not in stopList]
              for document in docs]
 
     # Stemming
     result = [[stem(word) for word in line] for line in texts]
-
+    Table  = {}
+    for line in texts:
+        for word in line:
+            Table[stem(word)] = word
+    pickle.dump( Table, open( "../Data/dicts/HashTable.p", "wb" ) )
     # Remove words that only appear once
     all_tokens = sum(result, [])
     tokens_once = set(word for word in set(all_tokens) if all_tokens.count(word) == 1)
@@ -47,7 +51,6 @@ def main():
     dictionary = corpora.Dictionary(texts)
     dictionary.save('../Data/dicts/2012.dict')
     print dictionary
-
     corpus = [dictionary.doc2bow(text) for text in texts]
     corpora.MmCorpus.serialize('../Data/dicts/2012.mm', corpus)
 
