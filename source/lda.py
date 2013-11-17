@@ -11,10 +11,21 @@ def main():
 
     lda.save('../Data/model/2012.lda')
 
-    #docs = [lda[doc] for doc in mm]
+    docs = [lda[doc] for doc in mm]
 
-    #for doc in docs:
-        #print doc
+    index = gensim.similarities.MatrixSimilarity(docs)
+    index.save('../Data/model/2012.index')
+
+    for i in range(len(docs)):
+        sims = index[docs[i]]
+
+        sims = sorted(enumerate(sims), key=lambda item: -item[1])
+        for doc in sims:
+            if doc[0] == i:
+                sims.remove(doc)
+                break
+
+        print 'For #', i, sims
 
     #topics = lda.show_topics(20)
     #for topic in topics:
