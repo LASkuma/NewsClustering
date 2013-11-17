@@ -2,11 +2,13 @@ from gensim import corpora, models, similarities
 from stemming.porter2 import stem
 import string
 import re
+import logging
 
 def main():
     # Open utility and data files
     dataFile = open('../Data/2012data.txt', 'r')
     stopFile = open('../Data/english.stop.txt', 'r')
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
     # Read in stop list
     stopList = [line.strip() for line in stopFile]
@@ -42,7 +44,14 @@ def main():
     texts = [[word for word in text if word not in tokens_once]
             for text in result]
 
-    print texts
+    dictionary = corpora.Dictionary(texts)
+    dictionary.save('../Data/dicts/2012.dict')
+    print dictionary
+
+    corpus = [dictionary.doc2bow(text) for text in texts]
+    corpora.MmCorpus.serialize('../Data/dicts/2012.mm', corpus)
+
+    print corpus
 
 if __name__ == "__main__":
     main()
