@@ -17,9 +17,11 @@ def main():
 
     # Parse in and remove punctuation
     docs = []                       # List to store the contents of all the documents
+    urlList = []                    # List stores all the urls in the documents
     while True:
         strContent = ""             # String to store content of a single document
         url = dataFile.readline()   # Read the first line as url
+        urlList.append(url)
         dataFile.readline()         # Skip the <Content> tag
         while True:
             line = dataFile.readline().strip()
@@ -29,7 +31,7 @@ def main():
 
         docs.append(strContent)
         if not dataFile.readline(): break
-
+    pickle.dump(urlList, open("../Data/dicts/urlList.p", "wb"))
     dataFile.close()
     # Remove stop words
     texts = [[word for word in document.lower().split() if word not in stopList]
