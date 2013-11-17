@@ -12,9 +12,10 @@ You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.htm
 
 #To-do#
 1. Save document urls
-2. Transform to sparse
+2. ~~Transform to sparse~~
 3. LDA step
 4. Inverse hash stemmed word to original word
+5. Do TF-IDF tranform to corpus
 
 #Data#
 The file "2012data.txt" in Data directory is used as the input for this project. It has the following structure
