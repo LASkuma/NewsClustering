@@ -1,4 +1,4 @@
-import logging, gensim, bz2
+import logging, gensim, bz2, pickle
 
 def main():
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -11,8 +11,11 @@ def main():
     lda.save('../Data/model/2012.lda')
 
     topics = lda.show_topics(20)
-    for topic in topics:
-        print topic
+
+    pickle.dump(topics, open("../Data/model/topics.p", "wb"))
+
+    #for topic in topics:
+        #print topic
 
 if __name__ == "__main__":
     main()

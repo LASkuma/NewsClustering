@@ -6,6 +6,8 @@ def main():
 
     docs = [lda[doc] for doc in mm]
 
+    pickle.dump(docs, open("../Data/model/doc_index.p", "wb"))
+
     index = gensim.similarities.MatrixSimilarity(docs)
     index.save('../Data/model/2012.index')
 
