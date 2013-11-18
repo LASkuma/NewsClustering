@@ -16,7 +16,7 @@ You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.htm
 3. ~~LDA step~~
 4. ~~Inverse hash stemmed word to original word~~
 5. ~~Do TF-IDF tranform to corpus~~
-6. Similarity queries for all the documents (Clustering)
+6. ~~Similarity queries for all the documents (Clustering)~~
 7. Summarize topics
 
 #Data#
