@@ -26,17 +26,15 @@ def main():
 
     pickle.dump(sims, open("../Data/model/sim_index.p", "wb"))
 
-    topics = {}
-    for i in range(20):
-        topics[i] = []
+    topics = [[] for i in range(20)]
 
     for i in range(len(docs)):
         for topic in docs[i]:
             t = i, topic[1]
             topics[topic[0]].append(t)
 
-    for num, topic in topics.iteritems():
-        topics[num] = sorted(topic, key=lambda item: -item[1])
+    for i in range(len(topics)):
+        topics[i] = sorted(topics[i], key=lambda item: -item[1])
 
     pickle.dump(topics, open("../Data/model/cluster_index.p", "wb"))
     #print topics
