@@ -34,6 +34,9 @@ __\<\Content>__\n
 
 \n
 
+#Doc_index#
+doc[doc_b] is a list of pairs. Each pair is (topic_id, probability).
+
 
 #Resources#
 [Python Official Tutorial](http://docs.python.org/2/tutorial/index.html)
