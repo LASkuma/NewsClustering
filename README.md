@@ -18,6 +18,7 @@ You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.htm
 5. ~~Do TF-IDF tranform to corpus~~
 6. ~~Similarity queries for all the documents (Clustering)~~
 7. Summarize topics
+8. Evaluation [Datasets for single-label text categorization](http://web.ist.utl.pt/~acardoso/datasets/)
 
 #Data#
 The file "2012data.txt" in Data directory is used as the input for this project. It has the following structure
