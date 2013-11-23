@@ -37,6 +37,8 @@ __\<\Content>__\n
 
 #Doc_index#
 doc[doc_b] is a list of pairs. Each pair is (topic_id, probability).
+wordlist[list[listofwords]] is a list of list of words with its corresponding percentage.
+e.g. [['0.006', 'student'], ['0.005', 'engin'], ['0.004', 'agricultur'], ['0.004', 'program'] ...
 
 
 #Resources#
