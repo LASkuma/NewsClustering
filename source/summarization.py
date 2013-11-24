@@ -38,6 +38,7 @@ def main():
             doc += line
         if not dataFile.readline(): break
     print len(sumSentence)
+    pickle.dump(sumSentence, open("../Data/model/Summarization.p", "wb"))
     # for i in docs:
     #     print len(i)
     # print wordPercent
