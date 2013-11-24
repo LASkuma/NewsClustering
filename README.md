@@ -10,6 +10,11 @@ This is a repo for CS473 Final Project. It's aimed to cluster news threads from 
 
 You can find detailed [Install Steps](http://radimrehurek.com/gensim/install.html) from gensim website .
 
+1. Run parse.py
+2. Run transform.py
+3. Run lda.py
+4. Run index.py
+
 #To-do#
 1. ~~Save document urls~~
 2. ~~Transform to sparse~~
