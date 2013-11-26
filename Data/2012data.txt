@@ -6047,7 +6047,7 @@ http://www.purdue.edu/newsroom/releases/2012/Q3/purdue-mourns-alumnus-neil-armst
 . 
 </Content>
 
-../../../assets/css/reset.css
+http://www.purdue.edu/newsroom/releases/2012/Q3/purdue-musical-organizations-continues-campus,-community-arts-series.html
 <Content>
  Purdue Musical Organizations continues campus, community arts series
  WEST LAFAYETTE, Ind. - Purdue Musical Organizations will continue this year to present "Embrace the Sound," an arts series featuring five performances that are free and open to the public.
@@ -9275,7 +9275,7 @@ http://www.prophetstown.org/registration%20form.pdf. The fee for attending the w
 agmanager@prophetstown.org or Melissa Brown at 765-479-0367. 
 </Content>
 
-../../../assets/css/reset.css
+http://www.purdue.edu/newsroom/releases/2012/Q3/workshop-series-to-teach-successful-grant-writing.html
 <Content>
  Workshop series to teach successful grant writing
  WEST LAFAYETTE, Ind. - Employees of nonprofit organizations and government agencies can learn how to prepare effective grant proposals at Purdue Extension workshops scheduled through mid-November.
