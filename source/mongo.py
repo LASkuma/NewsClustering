@@ -7,8 +7,8 @@ def main():
     sim = pickle.load(open("../Data/model/sim_index.p", "rb"))
     Summ = pickle.load(open("../Data/model/Summarization.p", "rb"))
     title = pickle.load(open("../Data/dicts/title.p", "rb"))
-    db = client.NewsThreading
-    collection = db.testData
+    db = client.meteor                                                    # meteor: name of the database
+    collection = db.documents                                             # documents: name of the collection
     docid = 1;
     # print len(sim[1])
     # doc = {'id':docid, 'title':title[1], 'url':urlList[1], 'sim':[sim[1][i][0] for i in range(10)], 'summa':1}
