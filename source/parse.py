@@ -18,6 +18,7 @@ def main():
     # Parse in and remove punctuation
     docs = []                       # List to store the contents of all the documents
     urlList = []                    # List stores all the urls in the documents
+    title = []                      # List stores the first sentence of each document
     while True:
         strContent = ""             # String to store content of a single document
         url = dataFile.readline()   # Read the first line as url
@@ -25,13 +26,18 @@ def main():
         dataFile.readline()         # Skip the <Content> tag
         while True:
             line = dataFile.readline().strip()
+            if strContent=="": title.append(line)
             if line.startswith("</Content>"): break
             s = " ".join(re.split('\W+', line.lower()))
             strContent += ' ' + s
 
         docs.append(strContent)
+        # print len(docs)
         if not dataFile.readline(): break
     pickle.dump(urlList, open("../Data/dicts/urlList.p", "wb"))
+    print title
+    pickle.dump(title, open("../Data/dicts/title.p", "wb"))
+    pickle.dump(docs, open("../Data/dicts/content.p", "wb"))
     dataFile.close()
     # Remove stop words
     texts = [[word for word in document.lower().split() if word not in stopList]
@@ -39,7 +45,7 @@ def main():
 
     # Stemming
     result = [[stem(word) for word in line] for line in texts]
-
+    # pickle.dump(result, open("../Data/dicts/2012docs.p", "wb"))
     # Inverse stemming
     Table  = {}
     for line in texts:
@@ -56,12 +62,12 @@ def main():
     dictionary = corpora.Dictionary(texts)
     dictionary.save('../Data/dicts/2012.dict')
 
-    print dictionary
+    # print dictionary
 
     corpus = [dictionary.doc2bow(text) for text in texts]
     corpora.MmCorpus.serialize('../Data/dicts/2012.mm', corpus)
 
-    print corpus
+    # print corpus
 
 if __name__ == "__main__":
     main()

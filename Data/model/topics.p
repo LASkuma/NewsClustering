@@ -1,42 +1,42 @@
 (lp0
-S'0.006*student + 0.005*engin + 0.004*agricultur + 0.004*program + 0.003*plant + 0.003*school + 0.003*manag + 0.003*rank + 0.003*research + 0.003*graduat'
+S'0.004*clean + 0.003*gas + 0.003*vehicl + 0.002*shore + 0.002*spensa + 0.002*emiss + 0.002*sypri + 0.002*bicycl + 0.002*polic + 0.002*diesel'
 p1
-aS'0.003*breast + 0.003*swift + 0.003*regenstrief + 0.002*bortoletto + 0.002*higg + 0.002*wineri + 0.002*rna + 0.002*egg + 0.002*auffart + 0.002*wine'
+aS'0.002*farmland + 0.002*choreograph + 0.002*ostrac + 0.001*mem + 0.001*nematod + 0.001*easement + 0.001*mar + 0.001*reject + 0.001*nee + 0.001*puls'
 p2
-aS'0.002*purdueboard + 0.002*charcoal + 0.002*avron + 0.002*golf + 0.002*darnel + 0.002*twirl + 0.002*twin + 0.002*campus + 0.002*grimm + 0.001*expo'
+aS'0.006*convoc + 0.003*feinberg + 0.003*ticket + 0.002*sigma + 0.002*sale + 0.002*album + 0.002*iu + 0.002*kane + 0.002*genr + 0.002*elliott'
 p3
-aS'0.003*goldberg + 0.003*rube + 0.003*hay + 0.002*teacher + 0.002*badg + 0.002*lamb + 0.002*hampton + 0.002*buoy + 0.002*sled + 0.002*cee'
+aS'0.006*wine + 0.002*leas + 0.002*fungicid + 0.002*hors + 0.002*potter + 0.002*grape + 0.002*pot + 0.001*indi + 0.001*oxal + 0.001*jdgortat'
 p4
-aS'0.004*sigma + 0.004*mep + 0.003*manufactur + 0.003*lechtenberg + 0.002*telework + 0.002*constitut + 0.002*lean + 0.002*tap + 0.002*rdova + 0.002*firework'
+aS'0.002*eee + 0.002*flight + 0.002*rust + 0.002*martinez + 0.001*ywca + 0.001*women + 0.001*chappl + 0.001*poetri + 0.001*sutherland + 0.001*whittak'
 p5
-aS'0.004*clean + 0.003*measur + 0.003*playhous + 0.002*sensor + 0.002*devic + 0.002*loeb + 0.002*directori + 0.002*nuclear + 0.002*schoolhous + 0.002*park'
+aS'0.002*ash + 0.002*violenc + 0.001*librari + 0.001*siren + 0.001*herrick + 0.001*immigr + 0.001*drink + 0.001*rotc + 0.001*cattl + 0.001*victim'
 p6
-aS'0.003*webinar + 0.002*pumpkin + 0.002*unger + 0.002*porterfield + 0.002*text + 0.002*dryness + 0.002*asteroid + 0.002*surf + 0.002*bertino + 0.001*mow'
+aS'0.002*orcid + 0.001*fire + 0.001*hp + 0.001*mccartney + 0.001*prix + 0.001*klan + 0.001*wound + 0.001*festiv + 0.001*golf + 0.001*colloquium'
 p7
-aS'0.002*greet + 0.002*band + 0.002*russian + 0.002*glyphos + 0.002*myplat + 0.002*race + 0.002*ebv + 0.002*agrabl + 0.001*13th + 0.001*exum'
+aS'0.003*graze + 0.003*greet + 0.002*pastur + 0.002*stalk + 0.001*rot + 0.001*volunt + 0.001*exum + 0.001*pork + 0.001*neighborhood + 0.001*ddgs'
 p8
-aS'0.010*drought + 0.005*corn + 0.004*health + 0.004*state + 0.004*center + 0.004*indiana + 0.003*counti + 0.003*30 + 0.003*field + 0.003*sept'
+aS'0.003*swift + 0.003*fuel + 0.003*war + 0.002*aviat + 0.002*gasolin + 0.002*blend + 0.001*ethanol + 0.001*janney + 0.001*truven + 0.001*wineri'
 p9
-aS'0.003*enterscap + 0.002*disgust + 0.002*utilityrecon + 0.002*india + 0.002*polic + 0.002*listeria + 0.001*rad + 0.001*metal + 0.001*pedestrian + 0.001*bicycl'
+aS'0.004*morgan + 0.004*burton + 0.003*fiber + 0.003*breast + 0.003*grant + 0.003*women + 0.002*librari + 0.002*whitney + 0.002*supercomput + 0.002*foundri'
 p10
-aS'0.003*shore + 0.003*vehicl + 0.002*retire + 0.002*citi + 0.002*vre + 0.002*neil + 0.002*leli + 0.002*academi + 0.002*entrepreneurship + 0.002*trimest'
+aS'0.002*glyphos + 0.002*ebv + 0.002*badg + 0.002*bear + 0.001*wbaa + 0.001*comic + 0.001*band + 0.001*stutter + 0.001*ralli + 0.001*shaver'
 p11
-aS'0.002*fiber + 0.002*fire + 0.002*gym + 0.001*traffic + 0.001*courthous + 0.001*eye + 0.001*brazil + 0.001*rdova + 0.001*spirit + 0.001*hydrogen'
+aS'0.004*enterscap + 0.002*emc + 0.002*micro + 0.002*turf + 0.002*shelter + 0.002*goldberg + 0.002*rube + 0.002*utilityrecon + 0.002*patton + 0.001*fox'
 p12
-aS'0.005*event + 0.004*global + 0.004*food + 0.004*tree + 0.003*game + 0.003*book + 0.003*skill + 0.003*polit + 0.003*physic + 0.003*patient'
+aS'0.003*emerg + 0.003*ejeta + 0.002*stutter + 0.002*race + 0.002*loeb + 0.002*playhous + 0.002*veterinari + 0.002*tymora + 0.002*dog + 0.002*commenc'
 p13
-aS'0.002*recreat + 0.002*photovolta + 0.002*robot + 0.002*hispan + 0.002*gs300 + 0.002*polymac + 0.001*simul + 0.001*sport + 0.001*cla + 0.001*particl'
+aS'0.004*student + 0.003*engin + 0.003*research + 0.003*technolog + 0.003*award + 0.003*indiana + 0.002*program + 0.002*agricultur + 0.002*scienc + 0.002*center'
 p14
-aS'0.002*nematod + 0.002*tymora + 0.002*statu + 0.002*polic + 0.002*essen + 0.002*feinberg + 0.001*iliuk + 0.001*iron + 0.001*downey + 0.001*target'
+aS'0.003*particl + 0.003*higg + 0.002*bug + 0.002*sleep + 0.002*bortoletto + 0.002*fafsa + 0.002*majorana + 0.002*shipsey + 0.002*cms + 0.001*boson'
 p15
-aS'0.003*martinez + 0.002*wildlif + 0.002*grantselect + 0.002*concert + 0.002*sorghum + 0.001*comment + 0.001*nfl + 0.001*forum + 0.001*dispar + 0.001*fruit'
+aS'0.011*drought + 0.008*crop + 0.007*corn + 0.006*soybean + 0.005*plant + 0.005*price + 0.005*water + 0.004*grain + 0.004*farmer + 0.004*yield'
 p16
-aS'0.006*park + 0.006*technolog + 0.006*cancer + 0.006*busi + 0.005*scienc + 0.005*compani + 0.004*campus + 0.004*award + 0.004*medicin + 0.004*space'
+aS'0.003*vre + 0.002*leli + 0.002*parkinson + 0.002*alcohol + 0.002*huber + 0.002*latino + 0.002*beverag + 0.002*vaccin + 0.001*grief + 0.001*calori'
 p17
-aS'0.002*nitrat + 0.002*frankenberg + 0.002*beverag + 0.002*usa + 0.002*pal + 0.002*alcohol + 0.002*micro + 0.002*calori + 0.002*spark + 0.002*glucos'
+aS'0.004*disast + 0.004*aldrich + 0.003*hurrican + 0.003*ear + 0.002*asteroid + 0.002*katrina + 0.002*fli + 0.002*rebuild + 0.002*recoveri + 0.002*aflatoxin'
 p18
-aS'0.002*mem + 0.002*emc + 0.002*ddgs + 0.002*ziaie + 0.002*nanotechnolog + 0.002*blom + 0.002*tap + 0.002*prefer + 0.002*mother + 0.001*graviti'
+aS'0.006*armstrong + 0.004*neil + 0.002*chancellor + 0.002*apollo + 0.001*speaker + 0.001*moon + 0.001*webcast + 0.001*photovolta + 0.001*pete + 0.001*ferruzzi'
 p19
-aS'0.002*volunt + 0.002*striga + 0.002*hub + 0.002*siren + 0.002*yamamoto + 0.002*steffey + 0.001*govindaraju + 0.001*semest + 0.001*civil + 0.001*sorghum'
+aS'0.002*borlaug + 0.002*homecom + 0.002*patti + 0.002*queen + 0.002*king + 0.001*court + 0.001*cloak + 0.001*stamp + 0.001*atrazin + 0.001*cn'
 p20
 a.
