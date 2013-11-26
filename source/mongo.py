@@ -14,7 +14,7 @@ def main():
     # doc = {'id':docid, 'title':title[1], 'url':urlList[1], 'sim':[sim[1][i][0] for i in range(10)], 'summa':1}
     # print docid
     for sentence in Summ:
-        doc = {'id':docid, 'title':title[Summ.index(sentence)], 'url':urlList[Summ.index(sentence)], 'sim':[sim[Summ.index(sentence)][i][0] for i range(10)], 'summa':sentence}
+        doc = {'id':docid, 'title':title[Summ.index(sentence)], 'url':urlList[Summ.index(sentence)], 'sim':[sim[Summ.index(sentence)][i][0] for i in range(10)], 'summa':sentence}
         collection.insert(doc)
         docid += 1
     # collection.find_one({"something":"fortesting"})
