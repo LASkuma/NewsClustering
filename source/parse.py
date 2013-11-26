@@ -21,7 +21,7 @@ def main():
     title = []                      # List stores the first sentence of each document
     while True:
         strContent = ""             # String to store content of a single document
-        url = dataFile.readline()   # Read the first line as url
+        url = dataFile.readline().strip()   # Read the first line as url
         urlList.append(url)
         dataFile.readline()         # Skip the <Content> tag
         while True:

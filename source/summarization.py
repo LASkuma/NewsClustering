@@ -8,12 +8,17 @@ def main():
     dataFile = open('../Data/2012data.txt', 'r')
     wordPercent = {}
     sumSentence = []
+    wordlists = []
     for i in range(len(topics)):
         # print topics[i]
         tmp = topics[i].split(' + ')
+        tmplist = []
         for j in range(len(tmp)):
             wordlist = tmp[j].split('*')
+            tmplist.append(Table[wordlist[1]])
             wordPercent[wordlist[1]] = wordlist[0]
+        wordlists.append([tmplist[i] for i in range(5)])
+    pickle.dump(wordlists, open("../Data/dicts/topicwords.p", "wb"))
     while True:
         trash = dataFile.readline()
         trash = dataFile.readline()
